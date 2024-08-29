@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <title>F21DV Group 3 EDI UK Museums Map</title>
+
+    <!-- Loading libraries -->
+    <script src="lib/d3/d3.v7.min.js"></script>
+    <script src="lib/d3/d3-geo-projection.v4.min.js"></script>
+    <script src="lib/topojson/topojson-client.v3.min.js"></script>
+    
+    <!-- Loading styles --> 
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    
+    <div id="app">
+
+        <div id="map_view">     
+            
+            
+            <div id="filter-box">
+            <h3 class="governance-title">Museum Governance Types</h3>
+           <div class="filter-box-content"> <ul>
+                <li><span class="dot" style="background-color: #003C71;"></span> Government</li>
+                <li><span class="dot" style="background-color:#ff6a6a;"></span> Independent</li>
+                <li><span class="dot" style="background-color:#9c180ebe;"></span> University</li>
+                <li><span class="dot" style="background-color: #747474;"></span> Unknown</li>
+            </ul>
+        </div> </div> </div>
+        <div id="details_view">
+            <div id="summary_stats", class="charts">
+                
+                <table>
+                    <tr><td><div class="subtitle_label">Summary Statistics</div></td><td colspan="3"><div id="summary_stats_title" class="title_label">*insert area here*</div></td></tr>
+                    
+                    <tr><td>Area depravation index:</td>        <td id="depravation_index_val"></td>                   <td>Open museums:</td>                  <td id="number_of_open_museums_val">13</td></tr>
+                    <tr><td>Area demographic group:</td>        <td id="demographic_group_val"></td>                    <td>Closed museums:</td>                <td id="number_of_closed_museums_val">2</td></tr>
+                    <tr><td>Number of museum locations:</td>    <td id="number_museums_locations_val">10</td>              <td>Accreditated vs Unaccredited:</td>  <td id="accreditation_ratio_val">1.6 : 1</td></tr>
+                    <tr><td>Most common subject matter:</td>    <td id="most_common_subject_val">Archaeology</td>            <td>Most common museum size:</td>       <td id="most_common_museum_size_val">small</td></tr>
+                    <tr><td>Least common subject matter:</td>   <td id="least_common_subject_val">Mixed</td>                  <td>Most common museum type:</td>       <td id="most_common_museum_type_val">Independent</td></tr>
+
+                </table>
+                </div>
+           <div id="charts_view">
+                <div id="bar_chart_view" class="charts"></div>
+                <div id="donut_chart_view" class="charts"></div>
+                <div id="line_chart_view" class="charts"></div>
+                <div id="details_text_view" class="charts">
+                    
+                    <h3 class="title_label", id = "museum_name"></h3>
+                    <div id="details_output">
+                        Address:            <span id="museum_address"           class = "output_text"></span>
+                        Accreditation:      <span id="museum_accreditation"     class = "output_text"></span>
+                        Type:               <span id="museum_type"              class = "output_text"></span>
+                        Size:               <span id="museum_size"              class = "output_text"></span>
+                        Subject Category:   <span id="museum_subject_category"  class = "output_text"></span>
+                        Subject Specific:   <span id="museum_subject_specific"  class = "output_text"></span>
+                        Year Opened:        <span id="museum_year_opened"       class = "output_text"></span>
+                        Year Closed:        <span id="museum_year_closed"       class = "output_text"></span>
+                    </div>
+
+
+                </div> 
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

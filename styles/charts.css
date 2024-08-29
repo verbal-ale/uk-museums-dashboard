@@ -1,0 +1,41 @@
+/* A style sheet for the charts and their elemetnts */
+
+@import 'vars.css';
+
+svg.barchart rect.bar{
+    fill: var(--vis-element-color);
+    stroke: var(--vis-element-outline);
+    stroke-width: var(--vis-element-stroke-width);
+}
+
+svg.barchart rect.bar.highlighted{
+    fill: var(--highlight-color);
+    stroke: var(--accent-color);
+    stroke-width: 2px;
+}  
+
+    
+svg.barchart g.axisXtext{
+    font-size: 0%;
+}
+
+.donut_slices{
+    fill: var(--vis-element-color);
+    fill-opacity: 0.8;
+    stroke: var(--vis-element-outline);
+    stroke-width: var(--vis-element-stroke-width);
+}
+
+.curve{
+    fill: none;
+    stroke: var(--vis-mark-color);
+    stroke-width: var(--curve-width);
+}
+
+.chart_text{
+    font: var(--font-text);
+}
+
+.highlight_text{
+    font-family: var(--font-text);
+}

@@ -1,0 +1,43 @@
+@import 'vars.css';
+
+.title_label{
+    font: var(--font-title);
+    text-align: center;
+}
+
+.subtitle_label{
+    font: var(--font-subtitle);
+}
+
+
+.output_text{
+    font: var(--font-text);  
+}
+
+table {
+    border-collapse: collapse;
+    margin: 5px;
+    width: calc(100% - 10px); 
+}
+
+td {
+    border: var(--std-border);
+    font: var(--font-text);
+    line-height: 80%;
+}
+
+#details_text_view {
+    padding: 20px;
+}
+
+#details_output {
+    display: grid;
+    grid-template-columns: 1, 2fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+    font: var(--font-text);  
+}
+
+#museum-name{
+    font: var(--font-museum-title);
+}

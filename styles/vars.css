@@ -1,0 +1,42 @@
+/* A stylesheet to set the values of style attributes*/
+
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+:root{
+    
+    /* COLORS */
+    --main-color: #222222;
+    --accent-color: #003C71;
+    --highlight-color: #e44a0ee3;
+    --vis-element-color: #31B4D3;
+    --map-backgroud-color: #31b5d379;
+    --vis-mark-color: #ff7f50;
+    --vis-elemet-outline: #c8e3e9;
+    --charts-background-color: lightyellow;
+    --vis-gov-color: #003C71;
+    --vis-indie-color: #ff6a6a;
+    --vis-uni-color: #9c180ebe;
+    --vis-unknown-color: #747474;
+    /* FONTS */
+    --font-title: bold 24px 'Consolas', monospace;
+    --font-subtitle: bold 16px 'Consolas', monospace;
+    --font-text:  12px 'Consolas', sans-serif;
+    --font-museum-title:  bold 20px 'Consolas', monospace;
+    --font-filterbox-title: bold 20px 'Consolas', monospace;
+    --font-filterbox-content: 15px 'Consolas', sans-serif;
+   
+
+
+    /*SIZES*/
+    --vis-element-stroke-width: 2;
+    --curve-width: 3;
+
+    /*DIMENSIONS*/
+    --app-width:  1800px;
+    --app-height: 900px;;
+
+    /*BORDER*/
+    --std-border: 1px solid black;
+}

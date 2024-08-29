@@ -1,0 +1,84 @@
+/*The main style sheet*/
+
+@import 'charts.css';
+@import 'vars.css';
+@import 'map.css';
+@import 'stats.css';
+
+*{
+    color: #222;
+    font-family: sans-serif;
+}
+
+
+#app{
+    width: var(--app-width);
+    height: var(--app-height);
+    display: flex;
+    border: var(--std-border);
+}
+
+#map_view{
+    width: 45%;
+    margin: 10px;
+    padding: 0px;
+    border: var(--std-border);
+    background-color: var(--map-backgroud-color);
+}
+
+#details_view{
+    width: 55%;
+    margin: 20px;
+}
+
+#summary_stats{
+    height: 25%;
+    margin: 5px;
+    border: var(--std-border); 
+    background-color: var(--charts-background-color);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 5px;
+    width: calc(100% - 10px); 
+}
+
+td {
+    border: var(--std-border);
+    padding: 8px;
+}
+
+#charts_view {
+    height: 73%;
+    display: grid;
+    margin: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+.charts{
+    border: var(--std-border);
+    background-color: var(--charts-background-color);
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #878686;
+    min-width: 120px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+.dropdown {
+    position: relative;
+    margin: 20px;
+    display: inline-block;
+  }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
