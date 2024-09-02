@@ -28,7 +28,7 @@ let walesJson = await d3.json('./data/topologies/wales.topo.json');
 let englandJson = await d3.json('./data/topologies/england.topo.json');
 
 // Load data from csv
-csv_data = await d3.csv("./data/MappingMuseumsData2021_09_30_processed_v2.csv", (d)=>{
+csv_data = await d3.csv("./data/museum data/MappingMuseumsData2021_09_30_processed_v2.csv", (d)=>{
      //for each row d, return a new object
      return{
         museum_id:                          d.museum_id,
